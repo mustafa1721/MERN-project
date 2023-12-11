@@ -12,10 +12,10 @@ const Login = () => {
       const signInResponse = await signInWithGoogle();
       console.log(signInResponse)
       if (signInResponse === "SUCCESS") {
-        console.log("inside if")
+
         history.push('/customer-list');
       } else {
-        console.log("NOt inside if")
+
       }
     } catch (error) {
       console.error('Error signing in:', error);
